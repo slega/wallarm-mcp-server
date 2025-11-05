@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "wallarm": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-e",
+        "WALLARM_API_TOKEN=<wallarm_api_token>",
+        "wallarm-mcp-server:latest"
+      ]
+    }
+  }
+}

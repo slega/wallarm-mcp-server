@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  wallarm-mcp:
+    build: .
+    image: wallarm-mcp-server:latest
+    stdin_open: true
+    tty: true
+    environment:
+      - WALLARM_API_TOKEN=${WALLARM_API_TOKEN:-}
+
